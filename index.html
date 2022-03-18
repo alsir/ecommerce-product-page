@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+  
+<nav class="navbar ">
+  <img src="./images/logo.svg" class="navbar-brand p-2">
+  <ul class="navbar-nav d-flex flex-row padding">
+  <li class="nav-item ">Collections</li>
+  <li class="nav-item ">Men</li>
+  <li class="nav-item ">Women</li>
+  <li class="nav-item ">About</li>
+  <li class="nav-item ">Contact</li>
+</ul>
+<div id="nav-cart" class="p-2">
+  <p id="num"></p>
+<img src="./images/icon-cart.svg" id="cart-icon" alt="">
+<img src="./images/image-avatar.png" id="avatar">
+<ul id="orders">
+  <li id="list-header">Cart</li>
+  <p id="empty">Your cart is empty</p>
+  <button id="checkout">checkout</button>
+</ul>
+</div>
+</nav>
+
+<main class="d-flex flex-row p-3">
+  <section class="col-md-5 d-flex flex-column" >
+    <div id="main-img" ></div>
+    <section id="imgs" class="row p-4 ">
+      <img id="img-1" src="./images/image-product-1-thumbnail.jpg"class="col-sm-3 m-2 active" >
+      <img id="img-2" src="./images/image-product-2-thumbnail.jpg"class="col-sm-3 m-2" >
+      <img id="img-3" src="./images/image-product-3-thumbnail.jpg"class="col-sm-3 m-2" >
+      <img id="img-4"src="./images/image-product-4-thumbnail.jpg"class="col-sm-3 m-2" >
+      
+    </section>
+  </section>
+  <section id="info" class="col-md-5 ">
+  <h3>Sneaker Company</h3>
+
+  <h1>Fall Limited Edition<br> Sneakers</h1>
+
+  <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+  <section class="d-flex flex-row">
+  <h2>$125.00</h2>
+  <span class="">50%</span>
+  </section>
+  <p>$250.00</p>
+  <section class="d-flex flex-row">
+  <section class="d-flex flex-row" id="counter">
+   <img src="./images/icon-plus.svg" id="p" class="col-xs-3">
+  <p id="number" class="col-xs-3"></p>
+   <img src="./images/icon-minus.svg" id="n" class="col-xs-3" >
+  </section>
+  <button id="cart"> <img src="./images/icon-cart.svg" class="p-2">Add to cart</button>
+</section>
+  </section>
+</main>
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
